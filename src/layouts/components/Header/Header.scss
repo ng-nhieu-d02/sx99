@@ -1,0 +1,290 @@
+.header-container {
+    min-width: 1250px;
+    @media (max-width: 700px) {
+        min-width: 100px;
+        width: 100%;
+    }
+}
+.header-screen-mobile {
+    display: none;
+}
+.bg {
+    background: #092a63;
+    background: rgba(0, 0, 0, 0) -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0, #092a63),
+            color-stop(70%, #31449e),
+            to(#254290)
+        ) repeat scroll 0 0;
+    background: transparent -o-linear-gradient(bottom, #092a63 0, #31449e 70%, #254290 100%) repeat scroll 0 0;
+    background: transparent linear-gradient(to top, #092a63 0, #31449e 70%, #254290 100%) repeat scroll 0 0;
+    background: -o-linear-gradient(bottom, #092a63 0, #31449e 70%, #254290 100%);
+    background: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #092a63),
+        color-stop(70%, #31449e),
+        to(#254290)
+    );
+    background: linear-gradient(to top, #092a63 0, #31449e 70%, #254290 100%);
+    height: 9rem;
+}
+
+.filter-li {
+    filter: hue-rotate(185deg) brightness(1.5);
+    cursor: pointer;
+    &:hover {
+        filter: none;
+        color: #faf8a1;
+        border-top: 2px solid #faf8a1;
+    }
+}
+
+
+.tc {
+    background: url('../../../../public/home-icon.png') no-repeat center transparent;
+}
+
+.xs {
+    background: url('../../../../public/game-icon.png') no-repeat center transparent;
+}
+
+.sb {
+    background: url('https://hr681.com/home/img/common/icon-live.png') no-repeat center transparent;
+}
+
+.gs {
+    background: url('https://hr681.com/home/img/common/icon-slots.png') no-repeat center transparent;
+}
+
+.bc {
+    background: url('https://hr681.com/home/img/common/icon-fish.png') no-repeat center transparent;
+}
+
+.tt {
+    background: url('https://hr681.com/home/img/common/icon-sport.png') no-repeat center transparent;
+}
+
+.gb {
+    background: url('https://hr681.com/home/img/common/icon-qp.png') no-repeat center transparent;
+}
+
+.hoanTra {
+    background: url('../../../../public/icon-activity.png') no-repeat center transparent;
+    position: relative;
+    .hot {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    filter: hue-rotate(200deg) brightness(1);
+    background: url(../../../../public/hot.png) no-repeat transparent;
+    top: -15px;
+    right: -25px;
+}
+
+}
+
+.chat {
+    background: url('../../../../public/icon-servicer.png') no-repeat center transparent;
+}
+
+.online {
+    padding: 4px 8px;
+    background: url('https://hr681.com/home/img/common/number-box.png') no-repeat center;
+}
+
+.user {
+    background: url('https://hr681.com/home/img/common/icon-user.png') no-repeat center;
+}
+
+.pw {
+    background: url('https://hr681.com/home/img/common/icon-password.png') no-repeat center;
+}
+
+.confirm {
+    background: url('https://hr681.com/home/img/common/icon-checkCode.png') no-repeat center;
+}
+
+.btn {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    padding: 6px 6px;
+    border-radius: 4px;
+    background: #ccc;
+    text-decoration: none;
+    outline: none;
+}
+
+.login {
+    background: linear-gradient(to top, #33b499 0, #258370 100%);
+}
+
+.register {
+    background: linear-gradient(to top, #00d4d5 0, #009596 100%);
+}
+
+.try {
+    background: linear-gradient(to top, #00c0fa 0, #015eea 100%);
+}
+
+.notification-wrapper {
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 16px;
+    .notification-img {
+        display: block;
+        height: 27px;
+        width: 166px;
+        min-width: 166px;
+        min-height: 27px;
+    }
+}
+
+.notification {
+    display: inline-block;
+    color: #fff;
+    animation: move 65s linear infinite;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-25%, 0);
+    }
+    50% {
+        transform: translate(-50%, 0);
+    }
+    75% {
+        transform: translate(-75%, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+.hover-item {
+    .layer {
+        display: none;
+    }
+    .hover-wrapper {
+        display: none;
+        height: 0;
+        transition: max-height 1s;
+    }
+    &:hover .layer {
+        display: block;
+    }
+    &:hover .hover-wrapper {
+        display: block;
+        position: absolute;
+        top: 235px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1a226fec;
+        height: 100%;
+        min-height: 450px;
+        max-height: 1000px;
+        transition: max-height 1s;
+        &:hover {
+            cursor: pointer !important;
+        }
+        select {
+            color: orange;
+            border: 1px solid orange;
+            outline: none;
+            background-color: transparent;
+        }
+        .day-select {
+            padding: 4px 0;
+            &:hover {
+                background-color: rgb(125 122 133 / 62%);
+                color: rgb(255 224 0);
+            }
+        }
+    }
+}
+
+.h-display-none {
+    display: none;
+}
+.class-display-flex-menu {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.class-logo-display {
+    display: flex;
+}
+.user-box-login-success {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .login-username {
+        padding: 5px 15px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .login-username-icon {
+            display: inline-block;
+            margin-right: 10px;
+            width: 26px;
+            height: 26px;
+            background: url(https://hr681.com/home/img/common/icon-user.png) no-repeat center transparent;
+        }
+        span {
+            font-size: 14px;
+            color: white;
+        }
+        .tien {
+            padding: 5px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .nap-tien {
+            background-color: #0eb779;
+            margin-right: 10px;
+            &:hover {
+                background-color: #06af71d5;
+            }
+        }
+        .rut-tien {
+            background-color: #f58521;
+            margin-right: 10px;
+            &:hover {
+                background-color: #cc6c18ea;
+            }
+        }
+        .chuyen-tien {
+            background-color: #66bdff;
+            &:hover {
+                background-color: #2598f0e8;
+            }
+        }
+    }
+    .chia {
+        color: white;
+    }
+}
+.link-logo {
+    // width: 100%;
+    // height: 100%;
+    width: 230px;
+    height: 113px;
+    padding: 15px 0px;
+    display: flex;
+}
+
+.menu-for-mobile {
+    display: none;
+}

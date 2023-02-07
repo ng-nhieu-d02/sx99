@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+
+.input {
+    @apply outline-none bg-transparent placeholder:text-white focus:bg-blue-600 p-2 caret-white text-white;
+}
+
+.input-register {
+    @apply outline-none bg-transparent placeholder:text-gray-400  p-2 caret-white text-white;
+}
+
+.input-register:focus {
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid #aaa;
+}
+
+@tailwind utilities;

@@ -1,0 +1,32 @@
+.body-bg {
+    background: url('https://hr681.com/home/img/cp/bg.jpg') no-repeat center top transparent;
+    background-attachment: fixed;
+}
+
+.body-li {
+    color: white;
+    transform: scale(0.8);
+    transition: all ease 0.3s;
+    &.active {
+        color: black;
+        background: linear-gradient(to top, #ebb663 0, #fdfea1 46%, #efd892 98%);
+        transition: all ease 0.3s;
+        transform: scale(1);
+        &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    }
+    &:hover {
+        color: black;
+        background: linear-gradient(to top, #ebb663 0, #fdfea1 46%, #efd892 98%);
+        transition: all ease 0.3s;
+        cursor: pointer;
+        transform: scale(1);
+    }
+}
+.gird-box-content-game {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 35px;
+}

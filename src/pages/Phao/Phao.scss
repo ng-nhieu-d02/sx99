@@ -1,0 +1,101 @@
+.phaoPage {
+    overflow-x: hidden;
+    min-width: 1110px;
+    min-height: 1000px;
+    background: #0c0e12 url('../../../public/bg.jpg') no-repeat center top;
+    .app-phao {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        font-family: 'Microsoft Yahei', 'Hiragino Sans GB', 'Simsun,sans-self';
+        .header {
+            height: 125px;
+            background: url('../../../public/hbg.png') no-repeat center top;
+            .head {
+                display: block;
+                margin-top: 20px;
+                .inner {
+                    width: 1000px;
+                    margin: 0 auto;
+                    position: relative;
+                    left: 1px;
+                    display: flex;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    -webkit-box-pack: justify;
+                    justify-content: space-between;
+                    height: 95px;
+                    .logo {
+                        width: auto;
+                        height: 95px;
+                        h1 {
+                            height: 100%;
+                            margin: 0;
+                            padding: 0;
+                            a {
+                                height: 100%;
+                                .img-logo-phao {
+                                    width: auto;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .navbxwa {
+            background: url('../../../public/navbg.png') no-repeat center top;
+            margin-top: 14px;
+            margin-bottom: 18px;
+            min-height: 140px;
+            .psr {
+                position: relative;
+                .newbox {
+                    height: 45px;
+                    width: 750px;
+                    margin: 0 auto;
+                    z-index: 99;
+                    .newin {
+                        height: 45px;
+                        margin-left: 123px;
+                        padding-right: 40px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        .lunleft {
+                            height: 42px;
+                            margin-left: 143px;
+                            line-height: 42px;
+                            display: inline-block;
+                            color: #fff;
+                            animation: move 65s linear infinite;
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-25%, 0);
+    }
+    50% {
+        transform: translate(-50%, 0);
+    }
+    75% {
+        transform: translate(-75%, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
